@@ -13,6 +13,7 @@
             padding: 0;
             background-color: #f4f4f9;
             color: #333333;
+            text-align: center;
         }
 
         header {
@@ -24,27 +25,7 @@
             font-weight: bold;
         }
 
-        /* Navigation Bar */
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #1a252f;
-            padding: 10px;
-        }
-
-        .navbar a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 14px 20px;
-            font-size: 18px;
-            transition: background 0.3s ease-in-out;
-        }
-
-        .navbar a:hover {
-            background-color: #34495e;
-            border-radius: 5px;
-        }
-
+        /* Hero Section */
         .hero {
             text-align: center;
             padding: 50px 20px;
@@ -82,27 +63,49 @@
             transform: scale(1.05);
             cursor: pointer;
         }
+
+        /* Navigation Buttons */
+        .btn-container {
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        Welcome to Furniture Haven
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="/SEG3125p1/index.html">Home</a>
-        <a href="/SEG3125p1/services.html">Services</a>
-        <a href="/SEG3125p1/booking.html">Booking</a>
-        <a href="/SEG3125p1/location.html">Location</a>
-        <a href="/SEG3125p1/contact.html">Contact</a>
-    </nav>
-    
+    <header>Welcome to Furniture Haven</header>
 
     <div class="hero">
         Transform Your Home with Elegance & Comfort
     </div>
+
+    <!-- Navigation Buttons -->
+    <div class="btn-container">
+        <a href="/SEG3125p1/services.html" class="btn">Explore Services</a>
+        <a href="/SEG3125p1/booking.html" class="btn">Book a Consultation</a>
+        <a href="/SEG3125p1/location.html" class="btn">Find Our Store</a>
+        <a href="/SEG3125p1/contact.html" class="btn">Contact Us</a>
+    </div>
+
 
     <div class="categories">
         <div class="category">
@@ -122,6 +125,7 @@
             <p>Office</p>
         </div>
     </div>
+
 
 </body>
 </html>
